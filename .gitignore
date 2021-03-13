@@ -29,6 +29,8 @@ MANIFEST
 
 # Adding DS_Store
 .DS_Store
+# Local Files
+challenge-notes.md
 
 # PyInstaller
 #  Usually these files are written by a python script from a template
