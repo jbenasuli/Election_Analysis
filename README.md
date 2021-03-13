@@ -34,11 +34,11 @@ The analysis of the election shows that:
 
 The flexible nature of this Python code means that it can be fed data for any election, which has the same structure and requires the same analysis. No voting data is hardcoded making this tool agnostic to the  names and quantities of candidates and counties. Regardless of how many candidates and counties are reflected in the voting data, this audit tool will successfully analyze an election results csv file with the same structure and generate a vote count report certifying the given election's results.
 
-The code in the audit tool can easily be modified to analyze a locality type other than county. Below I have outlined some examples of the ways the audit tool script may be modified in order to certify and/or derive different insights into the results of elections held in Colorado.
+The code in the audit tool can easily be modified to analyze locality data other than just county vote data. Below I have outlined two examples of the ways the audit tool script may be modified in order to certify and/or derive different insights into the results of elections held in Colorado.
 
 ### 1) Evaluating a locality other than county
 
-Renaming the variables, lists and dictionaries which refer to the counties  the county variables can be modified to represent any other type of locality. additional lists, dictionaries can be added to address any n
+If a set of locations other than counties is required to analyze and certify the results of a given election, a different set of locations can be passed to the script in place of county data. If a different type of location is passed, the variables, lists, and dictionaries which refer to county data will need to be renamed to align with the new location data type. Any print statements containing county result specific text will also have to be edited to reflect the change. Additionally if the new location data is populated in a different column than the current county data column, the location data index references in the script will have to be edited accordingly.
 
 ### 2) Evaluating additional locality types
 
